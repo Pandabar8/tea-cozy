@@ -1,0 +1,132 @@
+* {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width/height */
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+/* Header */
+header {
+    height: 69px;
+    position: fixed;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.nav-container {
+    display: flex;
+    gap: 20px; /* Add some space between the nav links */
+}
+
+.nav {
+    text-decoration: underline;
+}
+
+#logo {
+    height: 50px;
+}
+
+/* Banner */
+.banner {
+    background-image: url("../images/img-mission-background.jpg");
+    text-align: center;
+    height: 700px;
+    width: 1200px;
+    align-content: center;
+    margin-top: 69px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.banner {
+    line-height: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: revert; /* Reverts to the browser's default font-size for heading elements */
+}
+
+/* Teas */
+.tea-section {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.tea {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap; /* Add this line to allow wrapping */
+}
+
+/* Locations */
+.locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url("../images/img-locations-background.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+
+}
+.locations>h2{
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+.flex-locations {
+    display: inline-flex;
+    align-content: center;
+    text-justify: center;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+
+.spot {
+    width: 300px;
+    line-height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin: 0 10px;
+}
+
+/* Contact */
+.contact {
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
